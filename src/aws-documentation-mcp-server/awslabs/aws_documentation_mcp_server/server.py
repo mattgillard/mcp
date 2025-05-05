@@ -80,7 +80,7 @@ mcp = FastMCP(
 @mcp.tool()
 async def read_documentation(
     ctx: Context,
-    url: Union[AnyUrl, str] = Field(description='URL of the AWS documentation page to read'),
+    url: str = Field(description='URL of the AWS documentation page to read'),
     max_length: int = Field(
         default=5000,
         description='Maximum number of characters to return.',
@@ -307,7 +307,7 @@ async def search_documentation(
 @mcp.tool()
 async def recommend(
     ctx: Context,
-    url: Union[AnyUrl, str] = Field(
+    url: str = Field(
         description='URL of the AWS documentation page to get recommendations for'
     ),
 ) -> List[RecommendationResult]:
