@@ -32,8 +32,8 @@ from awslabs.aws_documentation_mcp_server.util import (
 )
 from loguru import logger
 from mcp.server.fastmcp import Context, FastMCP
-from pydantic import AnyUrl, Field
-from typing import List, Union
+from pydantic import Field
+from typing import List
 
 
 # Set up logging
@@ -307,9 +307,7 @@ async def search_documentation(
 @mcp.tool()
 async def recommend(
     ctx: Context,
-    url: str = Field(
-        description='URL of the AWS documentation page to get recommendations for'
-    ),
+    url: str = Field(description='URL of the AWS documentation page to get recommendations for'),
 ) -> List[RecommendationResult]:
     """Get content recommendations for an AWS documentation page.
 
