@@ -215,6 +215,19 @@ A server for researching Git repositories using semantic search.
 
 [Learn more](src/git-repo-research-mcp-server/README.md) | [Documentation](https://awslabs.github.io/mcp/servers/git-repo-research-mcp-server/)
 
+### Code Documentation Generation MCP Server
+
+[![PyPI version](https://img.shields.io/pypi/v/awslabs.code-doc-gen-mcp-server.svg)](https://pypi.org/project/awslabs.code-doc-gen-mcp-server/)
+
+A server that automatically generates comprehensive documentation for code repositories.
+
+- Automated documentation generation based on repository analysis
+- AWS architecture diagram integration with AWS Diagrams MCP Server
+- Multiple document types (README, API, Backend, Frontend)
+- Interactive documentation creation workflow for AI assistants
+
+[Learn more](src/code-doc-gen-mcp-server/README.md) | [Documentation](https://awslabs.github.io/mcp/servers/code-doc-gen-mcp-server/)
+
 ### Postgres MCP Server
 
 [![PyPI version](https://img.shields.io/pypi/v/awslabs.postgres-mcp-server.svg)](https://pypi.org/project/awslabs.postgres-mcp-server/)
@@ -225,6 +238,22 @@ A server for Aurora Postgres.
 - Fetch table columns and comments from Postgres using RDS Data API
 
 [Learn more](src/postgres-mcp-server/README.md) | [Documentation](https://awslabs.github.io/mcp/servers/postgres-mcp-server/)
+
+### Synthetic Data MCP Server
+
+[![PyPI version](https://img.shields.io/pypi/v/awslabs.syntheticdata-mcp-server.svg)](https://pypi.org/project/awslabs.syntheticdata-mcp-server/)
+
+A server for generating, validating, and managing synthetic data.
+
+- Business-Driven Generation: Generate synthetic data instructions based on business descriptions
+- Safe Pandas Code Execution: Run pandas code in a restricted environment with automatic DataFrame detection
+- JSON Lines Validation: Validate and convert JSON Lines data to CSV format
+- Data Validation: Validate data structure, referential integrity, and save as CSV files
+- Referential Integrity Checking: Validate relationships between tables
+- Data Quality Assessment: Identify potential issues in data models (3NF validation)
+- Storage Integration: Load data to various storage targets (S3) with support for multiple formats and configurations
+
+[Learn more](src/syntheticdata-mcp-server/README.md) | [Documentation](https://awslabs.github.io/mcp/servers/syntheticdata-mcp-server/)
 
 ### Use Cases for the Servers
 
